@@ -1,0 +1,18 @@
+// ez egyelőre a növényes feladat mintájára alapuló ház adatbázis lesz majd
+
+
+{
+    "-NYITeN0CKoMQvHSE7YE": {
+      "iranyitoszam": "1145",
+      "varos": "Budapest",
+      "utca": "Gyertyán utca",
+      "házszám": "18",
+      "kepUrl": "https://webshop.oazis.hu/Images/Products/torpe_chili_paprika.jpg"
+    },
+    "-NYITv5d77UQ9qG2AAfr": {
+        "iranyitoszam": "1145",
+        "varos": "Budapest",
+        "utca": "Tallér utca",
+        "házszám": "6",
+        "kepUrl": "https://webshop.oazis.hu/Images/Products/torpe_chili_paprika.jpg"    }
+}

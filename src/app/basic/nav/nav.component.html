@@ -16,24 +16,142 @@
         <button mat-menu-item [routerLink]="['/workers', 'Varga Rezső']">Varga Rezső</button>
     </mat-menu>
 
-    <button mat-raised-button color="primary" routerLink="login">Bejelentkezés</button>
+    <button mat-raised-button color="primary" [matMenuTriggerFor]="menu">Belépés</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="auth/client">Ügyfél</button>
+        <button mat-menu-item routerLink="auth/workers">Dolgozó</button>
+    </mat-menu>
 
 </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Szolgáltatásaink</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Szolgáltatásaink</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                A társasházakról szóló 2003. Évi CXXXIII. Törvény meghatározza azon teendőket, melyeket a társasházak
+                működtetése során el kell végezni. Fő feladata a fenntartás, üzemeltetés, karbantartás, felújítás ill. a
+                rendes gazdálkodást is meghaladó kiadások koordinálása, a társasház működtetése és vezetése.
+                A közös képviselő munkáját Számvizsgáló Bizottság segíti és ellenőrzi. A társasház bankszámlái felett a
+                közös
+                képviselő mellett, aláírási joggal a Számvizsgáló Bizottság tagjai rendelkeznek. <br>
+                A közös képviselőnek mindenek elött rendelkeznie kell a Társasház törzslapjával. Az adottságok
+                ismeretében a
+                Társasházi törvény valamint az Alapító Okirat, Szervezeti Működési Szabályzat előírásait figyelembe véve
+                kell
+                megtervezni a társasház költségvetését és ez alapján kezelését, működését.
+                Az eddig közös képviselőként benyújtott pályázatok (Pl.: korszerűsítési, Panel pályázat) száma és
+                eredményessége:
+                Minden évben az elszámoló közgyűlések alkalmával tervezzük meg a költségvetést. Ennek szerves része a
+                mindenkori önkormányzati - felújítási pályázatokon való részvétel, feltétele az önrész felújítási
+                számlán való
+                lekötése. <br> <br>
+
+                Pályázati munkáink: <br>
+                Strang felújítás, homlokzat felújítások, függőleges alapszigetelés, erkély felújítások, tetőszigetelés,
+                gázvezeték teljes felújítás, (következő felújítási pályázatunk: Panel építésű házunkban, a
+                hőmennyiségmérők
+                felszerelése lesz.)
+
+                24 órás elérhetőséggel rendelkezünk, s ennek formái:
+                Telefon, fax, üzenetrögzítő, E-mail. <br>
+                Irodánkban hétfőn, délután 13 - 18 óráig és csütörtök délelőtt, 8 - 12 óráig fogadóórát tartunk.
+                Igény esetén a társasház közösségi szobájában is elérhetik a társasház képviselőjét. <br>
+
+                A könyvelés módja: <br>
+                Saját fejlesztésű számítógépes programmal történik, így minden házra egyedileg tudjuk igazítani a
+                szükséges
+                kimutatásokat, bizonylatokat. <br><br>
+
+                TEVÉKENYSÉGÜNK FŐBB PONTOKBAN. <br>
+                1. A társasház Törzslapjának elkészítése: <br>
+
+                2. A társasház legfőbb jellemzőinek felmérése: <br>
+                Az épület alapjellemzői
+                Teherhordó szerkezetek
+                Az épület műszaki állapota
+                Épületgépészet
+                Épület környezeti adottságai
+                Az épület használhatósági foka
+                A tulajdonosok összetétele
+                Ház állapota, műszaki felmérés <br>
+
+                3. Pénzügyi dokumentumok kezelése: <br>
+                Bankkivonatok
+                - üzemeltetési számla (a számlák kiegyenlítése lehetőség szerint átutalással történjen);
+                - felújítási számlakezelés <br>
+                Üzemeltetési számlához tartozó csekkfüzet kezelése <br>
+                Bevételi pénztárbizonylatok kezelése <br>
+                Kiadási pénztárbizonylatok kezelése <br>
+                Naplófőkönyv tételes vezetése <br>
+                Analitikus nyilvántartások: <br>
+                - beérkező és kimenő számlák <br>
+                - tulajdonosok befizetési kötelezettségei és teljesítésük (kérés szerint havonkénti vagy negyedévenkénti
+                egyenlegközléssel) <br>
+                - adóhatósággal kapcsolatos dokumentumok kezelése <br>
+                - pénzintézettel kötött szerződések <br>
+                A Számvizsgáló Bizottság valamint a tulajdonosok a napra kész könyvelésbe bármikor betekinthetnek. <br>
+
+                4. Üzemeltetéssel kapcsolatos feladatok: <br>
+                - Társasház anyagi helyzetének stabilizálása <br>
+                - előző év bázisszámain alapuló, alapos költségvetés készítése <br>
+                - kintlévőségek behajtása (felszólítás, ügyvédi felszólítás, bírósági behajtás) <br>
+                - bérleti díjak beszedése (pl.: táblabérlet, helység kiadás stb., az elosztandó költségek csökkentése
+                érdekében) <br>
+                - a vízórával nem rendelkező tulajdonosok vízfogyasztásának vizsgálata pl. fő/Ft/hó, m2/Ft/hó,
+                tul.hányad/Ft/hó <br>
+                - egyéni közüzemi mérőórával (hidegvíz, melegvíz, fűtés) rendelkezők részére havi fizetési kötelezettség
+                postázása. <br>
+                Minden évben az elszámoló közgyűlések alkalmával tervezzük meg a költségvetést. Ennek szerves része a
+                mindenkori önkormányzati felújítási pályázatokon való részvétel, melynek feltétele az önrész felújítási
+                számlán való lekötése. <br>
+
+                5. Műszaki feladatok meghatározása, dokumentációk kezelése:
+                A társasház gépészeti avulásáról pontos felmérés, prioritásnak megfelelő kiviteli sorrend felállítása.
+                Természetesen a műszaki munkák kivitelezőitől árajánlatok bekérése után, a Számvizsgáló Bizottsággal
+                dönti el
+                a közös képviselő, hogy melyik kivitelező árajánlatát fogadják el. (Szerződés szerinti 10%.-os jó
+                teljesítési
+                garanciával!) <br>
+                Műszaki dokumentációk kezelése: <br>
+                - tervrajzok, szakvélemények, jegyzőkönyvek <br>
+                - a Társasház alapító okiratának műszaki terv dokumentációja <br>
+                - építészeti, gépészeti tervrajzok <br>
+                - tűzvédelmi terv elkészíttetése <br>
+                - érintésvédelem <br>
+
+                6. Működési feladatok: <br>
+                A tulajdonosi közösséggel kapcsolatbakerülő kivitelezők és más (pl. takarító, gondnok, kertész stb.)
+                vállalkozókkal a szerződések megkötése, felülvizsgálata és nyomon követése. <br>
+                Működési dokumentációk kezelése: <br>
+                - a Társasház alapító okirata <br>
+                - szervezeti-működési szabályzat <br>
+                - közgyűlési meghívók, jegyzőkönyvek, jelenléti ívek, meghatalmazások <br>
+                - tulajdonosi nyilvántartás <br>
+                - szerződések: közművek, biztosítás, munka, bérleti szerződés, <br>
+                - adóhatósági - bírósági anyagok, fizetési meghagyások <br>
+                - levelezés <br>
+                Fő feladat: A tulajdonos közösséggel kapcsolatba kerülő kivitelezők és más (pl. takarító) vállalkozókkal
+                a
+                szerződések megkötése, felülvizsgálata és nyomon követése. <br>
+
+                7. Vállalási ár: <br>
+                A fenti feladatok ellátását, a teljes körű képviseletet a számviteli nyilvántartással, könyveléssel
+                együtt
+                havonta és albetétenként, a társasház tulajdonosainak számától függően vállaljuk. <br><br>
+
+
+                Reméljük, hogy tevékenységünkről szóló bemutatónk elnyeri tetszésüket, és nem csak írásban
+                bizonyíthatjuk
+                szakmai tudásunkat.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
+</div>

@@ -13,6 +13,8 @@ import { FooterComponent } from './basic/footer/footer.component';
 import { WorkersComponent } from './basic/workers/workers.component';
 import { IntroductionComponent } from './basic/introduction/introduction.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { WorkersLoginComponent } from './auth/workers-login/workers-login.component';
+import { ClientLoginComponent } from './auth/client-login/client-login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     HomeComponent,
     FooterComponent,
     WorkersComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    WorkersLoginComponent,
+    ClientLoginComponent
   ],
   imports: [
     BrowserModule,
