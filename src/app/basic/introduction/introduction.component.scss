@@ -1,0 +1,18 @@
+.introduction_container{
+    margin-top: 50px;
+    width: auto;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    img{
+  width: 700px;    
+  padding: 20px;
+      height: auto;
+    }
+    .introduction_container_header{
+      text-align: center;
+      p{
+        padding: 10px;
+      }
+    }
+  }

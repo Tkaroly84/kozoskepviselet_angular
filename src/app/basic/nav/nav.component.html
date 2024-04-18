@@ -1,1 +1,39 @@
-<p>nav works!</p>
+<div class="nav">
+
+    <mat-icon id="matIcon" routerLink="" aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+
+    <button mat-button routerLink="introduction">Bemutatkozás</button>
+
+    <button mat-button data-bs-toggle="modal" data-bs-target="#exampleModal">Szolgáltatásaink</button>
+
+    <button mat-button [matMenuTriggerFor]="beforeMenu">Kollégáink</button>
+    <mat-menu #beforeMenu="matMenu" xPosition="after">
+        <button mat-menu-item [routerLink]="['/workers', 'Farkas Gábor']">Farkas Gábor</button>
+        <button mat-menu-item [routerLink]="['/workers', 'Prepok Tibor']">Prepok Tibor</button>
+        <button mat-menu-item [routerLink]="['/workers', 'Schlosser János']">Schlosser János</button>
+        <button mat-menu-item [routerLink]="['/workers', 'Farkasné Vancza Ágnes']">Farkasné Vancza Ágnes</button>
+        <button mat-menu-item [routerLink]="['/workers', 'Borsányiné Szabó Ágnes']">Borsányiné Szabó Ágnes</button>
+        <button mat-menu-item [routerLink]="['/workers', 'Varga Rezső']">Varga Rezső</button>
+    </mat-menu>
+
+    <button mat-raised-button color="primary" routerLink="login">Bejelentkezés</button>
+
+</div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Szolgáltatásaink</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,1 +1,12 @@
-<p>workers works!</p>
+<div class="introduction_container" *ngIf="workerName">
+
+    <img [src]="image" alt="{{workerName}}">
+
+    <div class="introduction_container_header">
+        <h1>{{ workerName }}</h1>
+        <h3>{{ post }}</h3>
+        <h2> Telefonszám: +{{ phone }}</h2>
+        <p>{{ description }}</p>
+    </div>
+
+</div>
