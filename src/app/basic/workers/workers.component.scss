@@ -1,25 +1,14 @@
-.introduction_container {
+.example-card {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
     margin: auto;
-    margin-top: 50px;
-    width: 70%;
-    height: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+    margin-top: 2rem;
     border-radius: 15px;
-
-    img {
-        width: 80%;
-        padding: 20px;
-        height: 100%;
-        border-radius: 10%;
-    }
-
-    .introduction_container_header {
+    mat-card-header, mat-card-content, mat-card-actions {
+        margin: auto;
         text-align: center;
-
-        p {
-            padding: 10px;
-        }
+    }
+    img{
+        margin: 1rem 0rem 1rem 0rem;
     }
 }
