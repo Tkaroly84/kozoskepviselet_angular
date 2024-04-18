@@ -1,4 +1,45 @@
-<div class="nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div  id="nav" class="container-fluid">
+            <mat-icon id="matIcon" routerLink="" aria-hidden="false" aria-label="Example home icon"
+                fontIcon="home"></mat-icon>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button mat-button routerLink="introduction">Bemutatkozás</button>
+                    </li>
+                    <li class="nav-item">
+                        <button mat-button data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Szolgáltatásaink</button>
+                    </li>
+                    <li class="nav-item">
+                        <button mat-button [matMenuTriggerFor]="beforeMenu">Kollégáink</button>
+                        <mat-menu #beforeMenu="matMenu" xPosition="after">
+                            <button mat-menu-item [routerLink]="['/workers', 'Farkas Gábor']">Farkas Gábor</button>
+                            <button mat-menu-item [routerLink]="['/workers', 'Prepok Tibor']">Prepok Tibor</button>
+                            <button mat-menu-item [routerLink]="['/workers', 'Schlosser János']">Schlosser
+                                János</button>
+                            <button mat-menu-item [routerLink]="['/workers', 'Farkasné Vancza Ágnes']">Farkasné Vancza
+                                Ágnes</button>
+                            <button mat-menu-item [routerLink]="['/workers', 'Borsányiné Szabó Ágnes']">Borsányiné Szabó
+                                Ágnes</button>
+                            <button mat-menu-item [routerLink]="['/workers', 'Varga Rezső']">Varga Rezső</button>
+                        </mat-menu>
+                    </li>
+                    <button id="signInButton" mat-raised-button color="primary" [matMenuTriggerFor]="menu">Belépés</button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item routerLink="auth/client">Ügyfél vagyok</button>
+                        <button mat-menu-item routerLink="auth/workers">Kolléga vagyok</button>
+                    </mat-menu>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- <div class="nav">
 
     <mat-icon id="matIcon" routerLink="" aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
 
@@ -23,7 +64,7 @@
     </mat-menu>
 
 </div>
-
+ -->
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
