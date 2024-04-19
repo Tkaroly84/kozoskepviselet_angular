@@ -1,18 +1,44 @@
-.introduction_container{
-    margin-top: 50px;
-    width: auto;
-    height: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    img{
-  width: 700px;    
-  padding: 20px;
-      height: auto;
+// .introduction_container{
+//     margin-top: 50px;
+//     width: auto;
+//     height: 500px;
+//     display: flex;
+//     justify-content: space-evenly;
+//     img{
+//   width: 90%;    
+//   padding: 20px;
+//       height: 70%;
+//     }
+//     .introduction_container_header{
+//       text-align: center;
+//       p{
+//         padding: 10px;
+//       }
+//     }
+//   }
+
+.card-text{
+    text-align: center;
+    justify-content: center;
+}
+
+/* Médialeképesség: Kisebb készülékek (pl. mobiltelefonok) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Kisebb betűméret a kisebb készülékekhez */
     }
-    .introduction_container_header{
-      text-align: center;
-      p{
-        padding: 10px;
-      }
+}
+
+/* Médialeképesség: Közepes méretű készülékek (pl. tabletek) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 18px; /* Nagyobb betűméret a közepes méretű készülékekhez */
     }
-  }
+}
+
+/* Médialeképesség: Nagyobb készülékek (pl. laptopok és asztali gépek) */
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: 20px; /* Nagyobb betűméret a nagyobb készülékekhez */
+    }
+}
