@@ -12,3 +12,24 @@
         margin: 1rem 0rem 1rem 0rem;
     }
 }
+
+/* Médialeképesség: Kisebb készülékek (pl. mobiltelefonok) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Kisebb betűméret a kisebb készülékekhez */
+    }
+}
+
+/* Médialeképesség: Közepes méretű készülékek (pl. tabletek) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 18px; /* Nagyobb betűméret a közepes méretű készülékekhez */
+    }
+}
+
+/* Médialeképesség: Nagyobb készülékek (pl. laptopok és asztali gépek) */
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: 20px; /* Nagyobb betűméret a nagyobb készülékekhez */
+    }
+}
