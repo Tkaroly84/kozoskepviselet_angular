@@ -16,6 +16,7 @@ import { IntroductionComponent } from './basic/introduction/introduction.compone
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { WorkersLoginComponent } from './auth/workers-login/workers-login.component';
 import { ClientLoginComponent } from './auth/client-login/client-login.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ClientLoginComponent } from './auth/client-login/client-login.component
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration(),
